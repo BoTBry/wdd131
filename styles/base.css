@@ -12,7 +12,8 @@ header{
     background-color: blue;
 }
 header h1{
-    padding: 40px;
+    padding: 40px 20px;
+    margin: 0 auto;
 }
 nav a{
     text-decoration: none;
@@ -73,6 +74,7 @@ main{
     width: 95%;
     overflow: hidden;
     justify-self: right;
+    z-index: 1;
 }
 .card2 a{
     font-family: sans-serif, Arial, Helvetica;
