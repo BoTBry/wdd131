@@ -63,7 +63,7 @@ main{
     grid-column: 1 / 4;
     border-radius: 20px;
     overflow: hidden;
-    box-shadow: 10px 10px 20px rgb(218, 43, 43);
+    box-shadow: 5px 10px 10px 0 rgb(218, 43, 43);
 }
 .card2{
     border: 1px solid rgb(70, 65, 65);
