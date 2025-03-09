@@ -5,15 +5,18 @@
 }
 h1, h2, h3{
     font-family: "Rock Salt", "Roboto", sans-serif;
+    color: #fff;
     font-weight: 600;
 }
 header{
     text-align: center;
-    background-color: blue;
+    background-color: #02020a;
 }
 header h1{
     padding: 40px 20px;
     margin: 0 auto;
+    color: #fff;
+
 }
 nav a{
     text-decoration: none;
@@ -22,11 +25,14 @@ nav a{
     font-size: 1rem;
     color: #fff;
     margin: auto;
+    border-radius: 15px;
+    border: 1.5px solid #7eaeff;
 }
 p{
     font-size: 1rem;
     font-family: sans-serif, Arial, Helvetica;
     line-height: 1.5rem;
+    color: #fff;
 
 }
 ul{
@@ -38,7 +44,7 @@ li{
     line-height: 2rem;
 }
 nav{
-    background-color: rgb(43, 41, 41);
+    background-color: #02020a;
     display: flex;
     text-align: center;
     width: 100%;
@@ -63,13 +69,15 @@ main{
     border: 1px solid rgb(70, 65, 65);
     grid-column: 1 / 4;
     border-radius: 20px;
+    background-color: #191933;
     overflow: hidden;
-    box-shadow: 5px 10px 10px 0 rgb(218, 43, 43);
+    box-shadow: 5px 10px 10px 0 rgb(70, 67, 67);
 }
 .card2{
     border: 1px solid rgb(70, 65, 65);
+    background-color: #191933;
     border-radius: 20px;
-    box-shadow: 10px 10px 20px rgb(218, 43, 43);
+    box-shadow: 10px 10px 20px rgb(70, 67, 67);
     grid-column: 4 / 6;
     width: 95%;
     overflow: hidden;
@@ -78,6 +86,7 @@ main{
 }
 .card2 a{
     font-family: sans-serif, Arial, Helvetica;
+    color: #fff;
 }
 
 .card p, .card2 p{
@@ -86,28 +95,40 @@ main{
 }
 
 section h2{
-    background-color: aqua;
+    background-color: #02020a;
+    color: #fff;
     overflow: hidden;
     padding: 15px;
 }
+
 .profilepic{
     float: right;
     padding: 50px;
 }
+.NigerianFlag{
+    float: left;
+    padding: 20px;
+    min-height: 6%;
+    max-width: 35%;
+    min-width: 35%;
+    width: 30%;
+}
 .line{
-    background-color: rgb(107, 107, 107);
+    background-color: #02020a;
     justify-self: center;
     border-radius: 20px;
-    height: 2px;
+    margin: 5px auto;
+    height: 3px;
     width: 70%;
 }
 footer{
     width: 100%;
-    background-color: rgb(37, 37, 32);
+    background-color: #02020a;
     text-align: center;
     margin: 0 auto;
     padding: 20px
 }
+
 
 @media screen and (max-width: 991px) {
     li a{
