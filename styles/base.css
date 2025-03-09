@@ -72,7 +72,7 @@ main{
     grid-column: 4 / 6;
     width: 95%;
     overflow: hidden;
-    justify-self: center;
+    justify-self: right;
 }
 .card2 a{
     font-family: sans-serif, Arial, Helvetica;
@@ -111,9 +111,9 @@ footer{
     li a{
         line-height: 1rem;
         font-size: 1rem;    
-        padding: 25px 0 50px 50px;
-
     }
     
-
+    ul{
+        padding: 50px 0 50px 25px;
+    }
 }
