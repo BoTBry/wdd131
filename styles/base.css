@@ -5,7 +5,7 @@
 }
 h1, h2{
     font-family: "Rock Salt", "Roboto", sans-serif;
-    font-weight: 200;
+    font-weight: 600;
 }
 header{
     text-align: center;
@@ -18,19 +18,20 @@ nav a{
     text-decoration: none;
     font-family: sans-serif, Arial, Helvetica;
     padding: 10px;
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: #fff;
     margin: auto;
 }
 p{
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-family: sans-serif, Arial, Helvetica;
+    line-height: 1.5rem;
 
 }
 ul{
     list-style-type: disc;
     text-align: left;
-    padding: 50px;
+    padding: 50px 0 50px 50px;
 }
 li{
     line-height: 2rem;
@@ -55,7 +56,7 @@ main{
     grid-template-columns: repeat(5, 1fr);
     text-align: center;
     width: 100%;
-    padding: 5%;
+    padding: 10px;
 }
 .card{
     border: 1px solid rgb(70, 65, 65);
@@ -81,7 +82,6 @@ main{
 .card p, .card2 p{
     text-align: left;
     padding: 30px;
-    line-height: 1.5rem;
 }
 
 section header{
