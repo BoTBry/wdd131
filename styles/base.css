@@ -110,7 +110,9 @@ footer{
 @media screen and (max-width: 991px) {
     li a{
         line-height: 1rem;
-        font-size: 1rem;
+        font-size: 1rem;    
+        padding: 25px 0 50px 50px;
+
     }
     
 
