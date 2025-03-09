@@ -18,7 +18,7 @@ nav a{
     text-decoration: none;
     font-family: sans-serif, Arial, Helvetica;
     padding: 10px;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: #fff;
     margin: auto;
 }
@@ -69,7 +69,7 @@ main{
     border-radius: 20px;
     box-shadow: 10px 10px 20px rgb(218, 43, 43);
     grid-column: 4 / 6;
-    width: 70%;
+    width: 90%;
     overflow: hidden;
     justify-self: center;
 }
