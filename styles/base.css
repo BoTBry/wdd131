@@ -108,30 +108,37 @@ section h2{
     padding: 15px;
 }
 
+section h3{
+    border-bottom: #02020a solid 0.2rem;
+    width: 40%;
+    margin: 0 auto;
+    padding-bottom: 0.5rem;
+}
+
 .profilepic{
     float: right;
     padding: 20px;
-    min-height: 250px;
-    height: 250px;
-    min-width: 170px;
-    width: 170px;
+    max-height: 35%;
+    max-width: 200px;
+    min-width: 100px;
+    width: 30%;
 }
 .NigerianFlag{
     float: left;
-    padding: 20px;
+    padding: 1rem;
     min-height: 80px;
     max-width: 35%;
     min-width: 50%;
     width: 30%;
 }
-.line{
+/* .line{
     background-color: #02020a;
     justify-self: center;
     border-radius: 20px;
     margin: 5px auto;
     height: 3px;
     width: 70%;
-}
+} */
 footer{
     width: 100%;
     background-color: #02020a;
