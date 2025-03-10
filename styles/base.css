@@ -110,7 +110,9 @@ section h2{
 
 .profilepic{
     float: right;
-    padding: 50px;
+    padding: 20px;
+    height: 250px;
+    width: 170px;
 }
 .NigerianFlag{
     float: left;
