@@ -18,15 +18,20 @@ header h1{
     color: #fff;
 
 }
+ nav a:hover{
+    background-color: #0963ff;
+}
 nav a{
     text-decoration: none;
     font-family: sans-serif, Arial, Helvetica;
     padding: 10px;
+    gap: 500px;
     font-size: 1rem;
     color: #fff;
     margin: auto;
     border-radius: 15px;
     border: 1.5px solid #7eaeff;
+    
 }
 p{
     font-size: 1rem;
@@ -36,20 +41,19 @@ p{
 
 }
 ul{
-    list-style-type: disc;
     text-align: left;
-    padding: 50px 0 50px 50px;
+    padding: 30px 50px;
 }
 li{
     line-height: 2rem;
 }
 nav{
-    background-color: #02020a;
+    /* background-color: #02020a; */
     display: flex;
     text-align: center;
-    width: 100%;
+    /* width: 100%; */
     padding: 20px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     flex-wrap: nowrap;
 }
 body{
@@ -60,36 +64,39 @@ body{
 main{
     justify-self: center;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: auto 30%;
     text-align: center;
     width: 100%;
     padding: 10px;
 }
 .card{
     border: 1px solid rgb(70, 65, 65);
-    grid-column: 1 / 4;
+    /* grid-column: 1 / 2; */
     border-radius: 20px;
     background-color: #191933;
     overflow: hidden;
+    width: 97%;
+    margin: 0 auto;
+    justify-self: center;
     box-shadow: 5px 10px 10px 0 rgb(70, 67, 67);
 }
-.card2{
+/* .card2{
     border: 1px solid rgb(70, 65, 65);
     background-color: #191933;
     border-radius: 20px;
     box-shadow: 10px 10px 20px rgb(70, 67, 67);
-    grid-column: 4 / 6;
+    grid-column: 2 / 3;
     width: 95%;
     overflow: hidden;
     justify-self: right;
     z-index: 1;
-}
-.card2 a{
+} */
+.card a{
     font-family: sans-serif, Arial, Helvetica;
     color: #fff;
 }
 
-.card p, .card2 p{
+.card p{
     text-align: left;
     padding: 30px;
 }
@@ -108,9 +115,9 @@ section h2{
 .NigerianFlag{
     float: left;
     padding: 20px;
-    min-height: 6%;
+    min-height: 80px;
     max-width: 35%;
-    min-width: 35%;
+    min-width: 50%;
     width: 30%;
 }
 .line{
