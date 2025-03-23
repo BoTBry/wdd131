@@ -6,6 +6,7 @@
 }
 body{
     height: 100vh;
+    text-align: center;
 }
 
 /* ---------------------Font Section----------------------------------- */
@@ -23,8 +24,6 @@ h1{
 h2{
     font-family: "Rock Salt", "Roboto", sans-serif, Arial, Helvetica;
     color: black;
-    align-self: center;
-    justify-self: center;
     padding: 30px;
     font-size: 2rem;
 }
@@ -60,7 +59,7 @@ nav a{
     text-decoration: none;
 }
 nav a:hover{
-    background-color: red;
+    background-color: #191933;
     color: aqua;
     transition: ease-in-out 0.5s;
 }
