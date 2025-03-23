@@ -7,4 +7,5 @@ document.getElementById("lastModified").textContent = `Last Updated ${lastModifi
 console.warn("WARNNING SD");
 
 let name = prompt("What is your name?");
-confirm("Are you sure?"), alert(`Hello ${name}, Welcome to my page!!!`);
+confirm("Are you sure?")
+alert(`Hello ${name}, Welcome to my page!!!`);
