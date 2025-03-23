@@ -12,7 +12,7 @@
     }
     .navigation{
         flex-direction: column;
-        transition: ease-in 1s;
+        padding: 0 0 10px 0;
         /* display: none; */
 
     }
@@ -33,9 +33,11 @@
         margin-left: 0;
     }
     nav{
-        transition: 1s;
         margin-left: -1000px;
         display: none;
+    }
+    main img:hover{
+        transform: scale(1.1);  
     }
     #menu{
         display: block;
