@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Chigbu chiemela">
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals">
+    <link rel="proconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.google.com/share?selection.family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700|Roboto:ital,wght@0,100..900;1,100..900|Rock+Salt">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <link rel="stylesheet" href="styles/place.css">
+    <title>WDD 131 – Dynamic Web Fundamentals - Chigbu Chiemela</title>
+</head>
+<body>
+
+    <header>
+        <div class="flag_clr"></div>
+        <div class="flag_clr"></div>
+        <div class="flag_clr"></div>
+        <h1>Nigeria</h1>
+
+    </header>
+    
+    <main>
+        <picture>
+            <!-- For viewports 700px and below -->
+            <source srcset="images/Abuja-City-Gate.webp" media="(max-width: 700px)">
+            
+            <!-- For viewports 701px and above -->
+            <!-- <source srcset="images/nigeriaHero-1550x804.webp" media="(min-width: 701px)"> -->
+            
+            <!-- Fallback image (if none of the above match) -->
+            <img id="hero_img" src="images/nigeriaHero-1550x804.webp" alt="Image of Nigeria">
+          </picture>
+          
+
+        <section class="card">
+
+            <div class="header-h2"><h2>Data</h2></div>
+            <table>            
+                <tbody>
+                    <tr>
+                        <td class="key">Area:</td> 
+                        <td class="value">923,769 km²</td>
+                    </tr>
+                    <tr>
+                        <td class="key">Population:</td> 
+                        <td class="value">223 million (as of 2023)</td>
+                    </tr>
+                    <tr>
+                        <td class="key">Capital:</td> 
+                        <td class="value">Abuja</td>
+                    </tr>
+                    <tr>
+                        <td class="key">Languages:</td> 
+                        <td class="value">English, Hausa, Yoruba, Igbo, Etc</td>
+                    </tr>
+                    <tr>
+                        <td class="key">Currency:</td> 
+                        <td class="value">Nigerian Naira (₦, NGN)</td>
+                    </tr>
+                    <tr>
+                        <td class="key">Time Zone:</td> 
+                        <td class="value">UTC+1</td>
+                    </tr>
+                    <tr>
+                        <td class="key">Calling Code:</td> 
+                        <td class="value">+234</td>
+                    </tr>
+                    <tr>
+                        <td class="key">Internet TLD:</td> 
+                        <td class="value">ng</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="card">
+            <div class="header-h2"><h2>Weather</h2> <span><img src="images/1075473_cloud_sky_summer_sun_sunshine_icon.svg" width="50px" height="50px" alt=""></span></div>
+            
+            <table>            
+                <tbody>
+                    <tr>
+                        <td class="key">Temperture:</td> 
+                        <td class="value"><span class="value1">24</span>°C</td>
+                    </tr>
+                    <tr>
+                        <td class="key">Conditions:</td> 
+                        <td class="value">Partly Sunny</td>
+                    </tr>
+                    <tr>
+                        <td class="key">Wind:</td> 
+                        <td class="value"><span class="value3">14</span>km/h</td>
+                    </tr>
+                    <tr>
+                        <td class="key">Wind Chill:</td> 
+                        <td class="value"><span class="value4"></span></td>
+                    </tr>
+                </tbody>
+            </table>
+        
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>&copy;<span id="year">2024</span> 🎲Chigbu Chiemela Bryan🎲 Nigeria</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+
+    </footer>
+
+
+    <script src="scripts/place.js" defer></script>
+
+</body>
+</html>
