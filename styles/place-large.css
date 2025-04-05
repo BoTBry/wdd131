@@ -71,6 +71,7 @@ picture{
 }
 
 .card{
+    justify-content: center;
     background-color: rgb(255, 255, 255, 0.8);
     border-radius: 5px;
     box-shadow: 5px 5px 15px 0 rgb(97, 96, 96);
@@ -130,6 +131,8 @@ picture{
 table{
     /* width: fit-content; */
     justify-self: center;
+    justify-content: center;
+    justify-items: center;
     padding: 10px;
     line-height: 1.5rem;
 }
