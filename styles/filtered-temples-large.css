@@ -85,6 +85,24 @@ main{
     justify-items: center;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 25px;
+    padding-bottom: 10px;
+}
+.card h3{
+    color: #fff;
+    padding: 10px 0;
+}.card p{
+    padding: 5px 0;
+}
+.card{
+    width: 325px;
+    background-color: #02020a;
+    color: #fff;
+    padding: 10px 0;
+    justify-items: center;
+    text-align: center;
+}
+table{
+    width: 100%;
 }
 
 /* -----------------------------------footer section--------------------------------- */

@@ -78,28 +78,82 @@ const temples = [
       "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
     },
     // Add more temple objects here...
+
     {
-        templeName: "Davao Philippines ",
-        location: "Davao City, Philippines",
-        dedicated: "2020, November, 14",
-        area: 8000,
-        imageUrl:
-        "https://churchofjesuschristtemples.org/assets/img/temples/davao-philippines-temple/davao-philippines-temple-11690.jpg"
-      },
-      {
-        templeName: "Lagos Nigeria",
-        location: "Lagos, Nigeria",
-        dedicated: "2025, May, 10",
-        area: 10000,
-        imageUrl:
-        "https://churchofjesuschristtemples.org/assets/img/temples/lagos-nigeria-temple/lagos-nigeria-temple-58577.jpg"
-      },
-      {
-        templeName: "Cedar City Utah",
-        location: "Cedar City, Utah",
-        dedicated: "2015, August, 8",
-        area: 10000,
-        imageUrl:
-        "https://churchofjesuschristtemples.org/assets/img/temples/cedar-city-utah-temple/cedar-city-utah-temple-2310.jpg"
-      }
-  ];
+      templeName: "Newport Beach California",
+      location: "Newport Beach, California, United States",
+      dedicated: "2005, August, 28",
+      area: 17800,
+      imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/newport-beach-california/400x250/newport-beach-temple-lds-758832-wallpaper.jpg"
+    },
+
+    {
+        templeName: "San Diego California",
+        location: "San Diego, California, United States",
+        dedicated: "1993, April, 25",
+        area: 72000,
+        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/san-diego-california/400x250/san-diego-temple-765109-wallpaper.jpg"
+    },
+
+    {
+        templeName: "Bountiful Utah",
+        location: "Bountiful, Utah, United States",
+        dedicated: "1995, January, 8",
+        area: 104000,
+        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/bountiful-utah/400x250/bountiful-temple-lds-1059079-wallpaper.jpg"
+    }
+];
+
+
+const main_page = document.getElementById("main_sec");
+const home_page = () => {
+  temples.forEach((item) => {
+    
+    let card = document.createElement("section");
+    card.classList.add("card")
+    let temple_name = document.createElement("h3");
+    let dedication = document.createElement("p");
+    let locations = document.createElement("p");
+    let areas = document.createElement("p");
+    let images_field = document.createElement("img");
+    let table = document.createElement("table");
+    let caption = document.createElement("caption");
+    let table_row = document.createElement("tr");
+    let table_row2 = document.createElement("tr");
+    let table_row3 = document.createElement("tr");
+    let table_head = document.createElement("th");
+    let table_data = document.createElement("td");
+    let table_data2 = document.createElement("td");
+    let table_data3 = document.createElement("td");
+
+
+    temple_name.textContent = item.templeName
+    locations.innerHTML = `<span>Location: ${item.location}</span>`;
+    dedication.innerHTML = `<span>Dedicated: ${item.dedicated}</span>`;
+    areas.innerHTML = `<span>Area: ${item.area}</span>`;
+    images_field.setAttribute("src", item.imageUrl)
+    images_field.setAttribute("alt", `${item.templeName} Temple`)
+    images_field.setAttribute("loading", "lazy")
+
+    card.appendChild(table);
+    caption.appendChild(temple_name);
+    table.appendChild(caption);
+    table_data.appendChild(locations);
+    table_data2.appendChild(dedication);
+    table_data3.appendChild(areas);
+    table_row.appendChild(table_data);
+    table_row2.appendChild(table_data2);
+    table_row3.appendChild(table_data3);
+    table.appendChild(table_row);
+    table.appendChild(table_row2);
+    table.appendChild(table_row3);
+
+    // card.appendChild(locations);
+    // card.appendChild(dedication);
+    // card.appendChild(areas);
+    card.appendChild(images_field);
+    main_page.appendChild(card);
+  })
+};
+
+home_page();
