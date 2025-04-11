@@ -19,6 +19,12 @@ year.innerHTML = `${current.getFullYear()}`;
 const lastModified = document.lastModified;
 lastMod.innerHTML = `Last Updated ${lastModified}`;
 
+const home_btn = document.getElementById("home");
+const old_btn = document.getElementById("old");
+const new_btn = document.getElementById("new");
+const large_btn = document.getElementById("large");
+const small_btn = document.getElementById("small");
+const page_header = document.getElementById("page_header");
 
 const temples = [
     {
@@ -104,11 +110,9 @@ const temples = [
     }
 ];
 
-
-const main_page = document.getElementById("main_sec");
-const home_page = () => {
+const home_page = (temples) => {
+  document.getElementById("main_sec").innerHTML = "";
   temples.forEach((item) => {
-    
     let card = document.createElement("section");
     card.classList.add("card")
     let temple_name = document.createElement("h3");
@@ -121,16 +125,15 @@ const home_page = () => {
     let table_row = document.createElement("tr");
     let table_row2 = document.createElement("tr");
     let table_row3 = document.createElement("tr");
-    let table_head = document.createElement("th");
     let table_data = document.createElement("td");
     let table_data2 = document.createElement("td");
     let table_data3 = document.createElement("td");
 
 
-    temple_name.textContent = item.templeName
-    locations.innerHTML = `<span>Location: ${item.location}</span>`;
-    dedication.innerHTML = `<span>Dedicated: ${item.dedicated}</span>`;
-    areas.innerHTML = `<span>Area: ${item.area}</span>`;
+    temple_name.innerHTML = `<strong>${item.templeName}</strong>`
+    locations.innerHTML = `<span style="color: lightblue;">Location: </span>${item.location}`;
+    dedication.innerHTML = `<span style="color: lightblue;">Dedicated: </span>${item.dedicated}`;
+    areas.innerHTML = `<span style="color: lightblue;">Area: </span>${item.area}`;
     images_field.setAttribute("src", item.imageUrl)
     images_field.setAttribute("alt", `${item.templeName} Temple`)
     images_field.setAttribute("loading", "lazy")
@@ -147,13 +150,48 @@ const home_page = () => {
     table.appendChild(table_row);
     table.appendChild(table_row2);
     table.appendChild(table_row3);
-
-    // card.appendChild(locations);
-    // card.appendChild(dedication);
-    // card.appendChild(areas);
     card.appendChild(images_field);
+    const main_page = document.getElementById("main_sec");
     main_page.appendChild(card);
+
   })
 };
 
-home_page();
+
+home_page(temples);
+
+home_btn.addEventListener("click", () => {
+  home_page(temples);
+  page_header.textContent = `Home`;
+});
+
+old_btn.addEventListener("click", () => {
+  const temple_year = temples.filter(item => {
+    const split_item = item.dedicated.split(",")[0];
+    let convert = Number(split_item) <= 1900;
+    return convert;
+  });
+  page_header.textContent = `Old`;
+  home_page(temple_year);
+});
+
+new_btn.addEventListener("click", () => {
+  const temple_year = temples.filter(item => {
+    const split_item = item.dedicated.split(",")[0];
+    let convert = Number(split_item) >= 2000;
+    return convert;
+  });
+  page_header.textContent = `New`;
+  home_page(temple_year);
+  
+});
+
+large_btn.addEventListener("click", () => {
+  page_header.textContent = `Large`;
+  home_page(temples.filter(item => item.area >= 90000))
+});
+
+small_btn.addEventListener("click", () => {
+  page_header.textContent = `Small`;
+  home_page(temples.filter(item => item.area <= 10000))
+});
