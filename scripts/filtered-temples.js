@@ -133,7 +133,7 @@ const home_page = (temples) => {
     temple_name.innerHTML = `<strong>${item.templeName}</strong>`
     locations.innerHTML = `<span style="color: lightblue;">Location: </span>${item.location}`;
     dedication.innerHTML = `<span style="color: lightblue;">Dedicated: </span>${item.dedicated}`;
-    areas.innerHTML = `<span style="color: lightblue;">Area: </span>${item.area}`;
+    areas.innerHTML = `<span style="color: lightblue;">Area: </span>${item.area} sq ft`;
     images_field.setAttribute("src", item.imageUrl)
     images_field.setAttribute("alt", `${item.templeName} Temple`)
     images_field.setAttribute("loading", "lazy")
