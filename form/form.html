@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/form.css">
+    <title>Registration Form</title>
+</head>
+<body>
+    <header><h1>Registration Form</h1></header>
+    <main>
+
+        <form id="reg_form" action="submitted.html" method="get" enctype="multipart/form-data">
+
+            <fieldset>
+
+                <legend>Registration Info</legend>
+
+                <label>First Name*<input type="text" name="fname" required></label>
+                <label>Second Name*<input type="text" name="sname" required></label>
+                <label>Email*<input type="email" name="email" placeholder="example@gmail.com" required></label>
+                <label>Phone<input type="tel" name="phone number" placeholder="+1234567894"></label>
+                <label>Website<input type="url" name="website" placeholder="https://"></label>
+
+            </fieldset>
+            <fieldset>
+
+                <legend>Course Info</legend>
+                
+                <label><input type="radio" name="job_info" value="employed">Employed</label>
+                <label><input type="radio" name="job_info" value="unemployed">Unemployed</label>
+
+                <div>Major
+                    <label><select name="Subject">
+
+                        <option value="">Please Select</option>
+                        <option value="software">Software Development</option>
+                        <option value="engineering">Engineering</option>
+                        <option value="security">Cyber Security</option>
+                        <option value="data">Data Professional</option>
+                        <option value="social">Sociology</option>
+                        <option value="architecture">Architecture</option>
+                        <option value="none">Others</option>
+
+                </select></label>
+                </div>
+
+                <label>Anticipated Completion Date <input type="date" name="date" value="date"></label>
+
+            </fieldset>
+            <label class="review">Tell Us A little About Yourself <span>(optional)</span><textarea></textarea></label>
+            
+            <input type="submit" value="Register">
+
+        </form>
+
+    </main>
+    
+</body>
+</html>
