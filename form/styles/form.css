@@ -97,17 +97,31 @@ input[type="submit"]:focus{
 }
 input[type="text"]:valid{
     border-right: green solid 5px;
-    border-radius: 8px;
+    border-radius: 6px;
 }
 input[type="text"]:invalid{
-    border-radius: 8px;
-    border-right: red solid 5px;
+    border-radius: 4px;
+    border-right: red solid 6px;
 }
 input[type="email"]:valid{
     border-radius: 8px;
-    border-right: green solid 5px;
+    border-right: green solid 6px;
 }
 input[type="email"]:invalid{
-    border-radius: 8px;
-    border-right: red solid 5px;
+    border-radius: 4px;
+    border-right: red solid 6px;
+}
+input[type="url"]:invalid{
+    border-radius: 4px;
+    border-right: red solid 6px;
+}
+input[type="text"], input[type="tel"], input[type="email"], input[type="date"],input[type="url"]{
+    padding: 0.25em;
+}
+
+@media screen and (max-width: 450px) {
+    input[type="submit"]{
+        margin: 15px auto;
+        justify-self: center;
+    }
 }
