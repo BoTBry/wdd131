@@ -45,7 +45,7 @@ let create_opt_list = (item) =>{
     item.forEach((element, index) => {
         const opts = document.createElement("option");
         opts.textContent = element.name;
-        opts.setAttribute("value", element.name.toLowerCase());
+        opts.setAttribute("value", element.id);
         opt_list.appendChild(opts);
         console.log(index);
     });
