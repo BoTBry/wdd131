@@ -57,6 +57,7 @@ textarea{
 input[type="radio"]{
     display: block;
     justify-content: center;
+    justify-self: center;
 
 }
 input[type="date"]{
