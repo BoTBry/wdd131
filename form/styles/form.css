@@ -57,7 +57,7 @@ textarea{
     justify-items: center;
 }
 input[type="radio"]{
-    display: block;
+    display: inline;
     justify-self: center;
 }
 input[type="date"]{

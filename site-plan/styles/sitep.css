@@ -1,0 +1,146 @@
+@import url(https://fonts.google.com/share?selection.family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700|Roboto:ital,wght@0,100..900;1,100..900|Rock+Salt);
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+h1, h2, h3{
+    font-family: "Rock Salt", "Roboto", sans-serif;
+    color: #fff;
+    font-weight: 600;
+}
+
+header{
+    text-align: center;
+    padding: 30px;
+    background-color: #02020a;
+}
+header h1{
+    display: inline;
+    padding: 1rem;
+    margin: 0;
+    color: #fff;
+
+}
+ nav a:hover{
+    background-color: #0963ff;
+}
+nav a{
+    text-decoration: none;
+    font-family: sans-serif, Arial, Helvetica;
+    padding: 10px;
+    gap: 500px;
+    font-size: 1rem;
+    color: #fff;
+    margin: auto;
+    border-radius: 15px;
+    border: 1.5px solid #7eaeff;
+    
+}
+p{
+    font-size: 1rem;
+    font-family: sans-serif, Arial, Helvetica;
+    line-height: 1.5rem;
+    color: #fff;
+}
+
+ul{
+    text-align: left;
+    padding: 30px 0;
+    list-style: none;
+}
+li{
+    line-height: 2rem;
+}
+nav{
+    background-color: #02020a;
+    display: flex;
+    text-align: center;
+    padding: 10px 0;
+    flex-wrap: nowrap;
+}
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+main{
+    justify-self: center;
+    display: grid;
+    grid-template: repeat(3, auto) / 1fr 1.5fr;
+    text-align: center;
+    width: 100%;
+    gap: 1.5rem;
+    padding: 10px;
+}
+
+.color-swatch {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 0.5rem;
+}
+.card{
+    border: 1px solid rgb(70, 65, 65);
+    border-radius: 20px;
+    background-color: #191933;
+    overflow: hidden;
+    width: 100%;
+    justify-self: center;
+    box-shadow: 5px 2px 15px 5px rgb(70, 67, 67);
+}
+.card:nth-of-type(1){
+    grid-row: 1 / 2;
+}
+.card:nth-of-type(3){
+    grid-row: 2 / 3;
+}
+.card:nth-of-type(4){
+    grid-row: 2 / 3;
+}
+.card:nth-of-type(5){
+    grid-row: 3 / 4;
+}
+.card:nth-of-type(6){
+    grid-row: 3 / 4;
+}
+
+.card a{
+    font-family: sans-serif, Arial, Helvetica;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.card p{
+    text-align: left;
+    padding: 30px;
+}
+.card img{
+    width: 70%;
+    padding-bottom: 1rem;
+
+}
+section h2{
+    background-color: #02020a;
+    font-size: 1.5em;
+    overflow: hidden;
+    padding: 1rem;
+    margin: 0 auto;
+    width: 100%;
+}
+
+section h3{
+    border-bottom: #02020a solid 0.2rem;
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 0.5rem;
+}
+
+footer{
+    width: 100%;
+    background-color: #02020a;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px
+}
+
