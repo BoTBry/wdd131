@@ -56,6 +56,8 @@ textarea{
 input[type="radio"]{
     display: block;
     justify-self: center;
+}
+input[type="date"]{
     appearance: none;
 }
 .checkbox{
