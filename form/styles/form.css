@@ -66,7 +66,8 @@ input[type="date"]{
     appearance: none;
     text-align: center;
     justify-content: center;
-    font-size: 0.8rem;
+    align-items: last baseline;
+    font-size: 1rem;
     height: 25px;
 }
 .checkbox{
@@ -120,6 +121,9 @@ textarea{
 }
 input[type="checkbox"], input[type="radio"]{
     cursor: pointer;
+}
+input[type="checkbox"]{
+    margin-right: 5px;
 }
 select:required:valid, input[type="date"]:required:valid{
     border-bottom: 3.5px solid green;
