@@ -4,15 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/form.css">
-    <title>Registration Form</title>
+    <title>Product Review</title>
 </head>
 <body>
-    <header><h1>Registration Form</h1></header>
+    <header><h1>Product Review</h1></header>
     <main>
 
-        <form id="reg_form" action="submitted.html" method="get" enctype="multipart/form-data">
+        <form id="reg_form" action="review.html" method="get" enctype="multipart/form-data">
 
-            <fieldset>
+            <div>
+                <label>Product Name<select name="Subject" id="slt_list" required>
+
+                    <option value="" disabled selected>Select a product ...</option>
+
+                    </select>
+                </label>
+            </div>
+
+            <div>
+
+                <label>Overall Rating</label>
+                <div class="radios">
+
+                    <label>&star; <input type="radio" name="1star" value="1star" required></label>
+                    <label>&star;&star; <input type="radio" name="1star" value="2star" required></label>
+                    <label>&star;&star;&star; <input type="radio" name="1star" value="3star" required></label>
+                    <label>&star;&star;&star;&star; <input type="radio" name="1star" value="4star" required></label>
+                    <label>&star;&star;&star;&star;&star; <input type="radio" name="1star" value="5star" required></label>
+    
+                </div>
+            </div>
+
+            <div>
+                <label>Date of Installation</label>
+                <label><input type="date" name="date" value="date" required></label>
+            </div>
+
+            <div>
+                <label>Which features did you find useful in the product?</label>
+                <label style="font-style: italic;" class="check">(Check all that apply)</label>
+            
+
+                <label class="checkbox"><input type="checkbox" value="Durability" name="Durability">Durability</label>
+                <label class="checkbox"><input type="checkbox" value="Ease of Use" name="Ease of Use">Ease of Use</label>
+                <label class="checkbox"><input type="checkbox" value="Performance" name="Performance">Performance</label>
+                <label class="checkbox"><input type="checkbox" value="Design" name="Design">Design</label>
+            </div>
+
+            <!-- <fieldset>
 
                 <legend>Registration Info</legend>
 
@@ -22,39 +61,48 @@
                 <label>Phone<input type="tel" name="phone number" placeholder="+1234567894"></label>
                 <label>Website<input type="url" name="website" placeholder="https://"></label>
 
-            </fieldset>
-            <fieldset>
+            </fieldset> -->
+            <!-- <fieldset>
 
                 <legend>Course Info</legend>
                 
-                <label><input type="radio" name="job_info" value="employed">Employed</label>
-                <label><input type="radio" name="job_info" value="unemployed">Unemployed</label>
+                    <div class="star-rating">
+                        <input type="radio" name="stars" id="star-a" value="5"/>
+                        <label for="star-a"></label>
+                    
+                        <input type="radio" name="stars" id="star-b" value="4"/>
+                        <label for="star-b"></label>
+                    
+                        <input type="radio" name="stars" id="star-c" value="3"/>
+                        <label for="star-c"></label>
+                    
+                        <input type="radio" name="stars" id="star-d" value="2"/>
+                        <label for="star-d"></label>
+                    
+                        <input type="radio" name="stars" id="star-e" value="1"/>
+                        <label for="star-e"></label>
+                    </div>
+              
 
-                <div>Major
-                    <label><select name="Subject">
-
-                        <option value="">Please Select</option>
-                        <option value="software">Software Development</option>
-                        <option value="engineering">Engineering</option>
-                        <option value="security">Cyber Security</option>
-                        <option value="data">Data Professional</option>
-                        <option value="social">Sociology</option>
-                        <option value="architecture">Architecture</option>
-                        <option value="none">Others</option>
-
-                </select></label>
-                </div>
 
                 <label>Anticipated Completion Date <input type="date" name="date" value="date"></label>
 
-            </fieldset>
-            <label class="review">Tell Us A little About Yourself <span>(optional)</span><textarea></textarea></label>
-            
-            <input type="submit" value="Register">
+            </fieldset> -->
+            <div>
+                <label class="review">Written Review <span style="font-style: italic; color: black;">(optional)</span><textarea name="review"></textarea></label>
+                <label id="username">Your Name <span style="font-style: italic; color: black;">(optional)</span> <input type="text" name="username"></label>
+                <input type="submit" value="Register">
+            </div>
 
         </form>
 
     </main>
     
+    <footer>
+        <p>&copy;<span id="currentyear"></span> ⚙️ Chigbu Chiemela Bryan ⚙️ Nigeria </p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script src="scripts/form.js"></script>
 </body>
 </html>
