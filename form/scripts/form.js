@@ -2,7 +2,6 @@
 console.log("Hello world");
 
 const year = document.getElementById("currentyear");
-const reviewCounter = document.getElementById("reviewCounter");
 const lastMod = document.getElementById("lastModified");
 
 //Getting the year function and setting it.
@@ -48,7 +47,7 @@ const maplist = item_list.map(items => {
   return {...items, name: uppercase};
 })
 
-let create_opt_list = (item) =>{
+const create_opt_list = (item) =>{
     item.forEach((element, index) => {
         const opts = document.createElement("option");
         opts.textContent = element.name;
@@ -58,5 +57,6 @@ let create_opt_list = (item) =>{
     });
 
 }
+
 console.log(maplist);
 create_opt_list(maplist);

@@ -130,6 +130,35 @@ select:required:invalid, input[type="date"]:required:invalid{
     border-bottom: 3.5px solid red;
     border-radius: 5px;
 }
+
+
+#review_main{
+    align-content: center;
+}
+#review{
+    position: relative;
+    width: 90%;
+    max-width: 500px;
+    height: 400px;
+    color: white;
+    background-color: var(--hd-ft-bg-clr);
+    border-radius: 50px;
+    justify-content: center;
+    justify-self: center;
+    margin: auto;
+    text-align: center;
+    font-family: monospace;
+    font-size: 1rem;
+    
+}
+#review p{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+}
+#review a{
+    color: aqua;
+}
 /* -----------------------footer---------------- */
 footer{
     background-color: var(--hd-ft-bg-clr);
