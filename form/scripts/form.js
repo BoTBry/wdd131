@@ -42,6 +42,12 @@ const item_list = [
     }
   ];
 
+const maplist = item_list.map(items => {
+  const element =  items.name;
+  let uppercase = element.split(" ").map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(" ");
+  return {...items, name: uppercase};
+})
+
 let create_opt_list = (item) =>{
     item.forEach((element, index) => {
         const opts = document.createElement("option");
@@ -52,40 +58,5 @@ let create_opt_list = (item) =>{
     });
 
 }
-
-create_opt_list(item_list);
-
-
-
-
-
-// Check if the review counter exists in localStorage, if not, initialize it
-if (!localStorage.getItem("reviewCounter")) {
-    localStorage.setItem("reviewCounter", 0);
-}
-
-// Function to update the review count display
-function updateReviewCount() {
-    let reviewCounter = parseInt(localStorage.getItem("reviewCounter"));
-    document.getElementById("reviewCount").textContent = `Reviews Completed: ${reviewCounter}`;
-}
-
-// Handle form submission
-const reviewForm = document.getElementById("submit");
-reviewForm.addEventListener("submit", function (event) {
-    // Increment review count in localStorage
-    let reviewCounter = parseInt(localStorage.getItem("reviewCounter"));
-    reviewCounter += 1;
-    
-    // Store the updated review count
-    localStorage.setItem("reviewCounter", reviewCounter);
-    
-    // Update the review count displayed on the page
-    updateReviewCount();
-});
-  
-// Update the review count when the page is loaded
-updateReviewCount();
-
-
-
+console.log(maplist);
+create_opt_list(maplist);

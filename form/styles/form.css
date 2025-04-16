@@ -54,11 +54,10 @@ textarea{
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
-    justify-items: center;
 }
-input[type="radio"]{
-    display: inline;
-    justify-self: center;
+.radios label input[type="radio"]{
+    margin: 0 auto;
+    display: block;
 }
 input[type="date"]{
     appearance: none;
