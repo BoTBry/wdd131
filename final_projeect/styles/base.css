@@ -1,0 +1,71 @@
+@media screen and (max-width: 740px) {
+    *{
+        box-sizing: border-box;
+        margin: 0;
+    }
+    header{
+        position: relative;
+    }
+    #menu{
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 20px;
+    }
+    #menu::before{
+        content: "☰";
+        padding: 5px;
+        color: #154115;
+        border: solid 2px #154115;
+        border-radius: 5px;
+    }
+    .show #menu::before{
+        content: "X";
+        padding: 5px 6px;
+        color: #154115;
+        border: solid 2px #154115;
+        border-radius: 5px;
+    }
+    .navigation{
+        display: none;
+    }
+    .show .navigation{
+        display: flex;
+        overflow: hidden;
+        flex-direction: column;
+        background-color: #154115;
+        width: 20%;
+        height: fit-content;
+        margin-top: 58px;
+        border-radius: 5px;
+    }
+    .navigation li{
+        padding: 15px;
+    }
+    .navigation a{
+        color: #fff;
+        padding: 10px 15px;
+        font-size: 0.8rem;
+    }
+    .navigation a:hover{
+        background-color: #8B4513;
+        border-radius: 5px;
+    }
+    .art_2{
+        max-height: 350px;
+    }
+    .weather ul{
+        font-size: 0.8rem;
+    }
+    iframe{
+        width: 95%;
+    }
+    footer{
+        height: fit-content;
+        flex-direction: column;
+        font-size: 0.8rem;
+    }
+    footer a{
+        font-size: 0.8rem;
+    }
+}
