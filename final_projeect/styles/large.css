@@ -394,6 +394,9 @@ footer p, footer a{
 
 /* ------------------------- FAQ ---------------------------- */
 
+#faq_main{
+    height: 100vh;
+}
 /* accordion */
 .accordion {
     margin: 5px auto;
