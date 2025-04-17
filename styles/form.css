@@ -23,6 +23,13 @@ body p{
     color: #000;
     font-family: var(--paragraph-font), 'Times New Roman', Times, serif;
 }
+#review_main{
+    height: 100%; 
+    margin: auto;
+}
+#review_main p{
+    color: #fff;
+}
 main{
     width: 100%;
     margin: auto;
