@@ -19,17 +19,8 @@ header{
 }
 
 /*------------------- main --------------------------------*/
-body p{
-    color: #000;
+#body p{
     font-family: var(--paragraph-font), 'Times New Roman', Times, serif;
-}
-#review_main{
-    height: 100%; 
-    margin: auto;
-    font-family: monospace, 'Times New Roman', Times, serif ;
-}
-#review_main p{
-    color: #fff;
 }
 main{
     width: 100%;
@@ -141,9 +132,12 @@ select:required:invalid, input[type="date"]:required:invalid{
     border-radius: 5px;
 }
 
-
 #review_main{
     align-content: center;
+    height: 100%; 
+    margin: auto;
+    font-family: monospace, 'Times New Roman', Times, serif ;
+    color: #fff;
 }
 #review{
     position: relative;
