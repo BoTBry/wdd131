@@ -1,4 +1,3 @@
-@import url(https://fonts.google.com/share?selection.family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700|Roboto:ital,wght@0,100..900;1,100..900|Rock+Salt);
 *{
     margin: 0;
     box-sizing: border-box;
@@ -17,10 +16,10 @@ body{
     height: 100vh;
 }
 h1,h2,h3,h4{
-    font-family: "Rock Salt", "Roboto", sans-serif;
+    font-family: 'Montserrat', monospace, sans-serif;
 }
 p, a, ul{
-    font-family: sans-serif, Arial, Helvetica;
+    font-family: "Open Sans", sans-serif, 'Times New Roman', Times, serif;
 }
 p{
     color: black;
@@ -49,7 +48,8 @@ a{
 }
 .navigation{
     height: 60px;
-    margin: 0 auto;
+    margin-top: 0;
+    margin-right: 5px;
     list-style: none;
     display: flex;
     text-align: center;
@@ -119,6 +119,7 @@ main h2{
 .test p, .test ul, .test, .test h3, .test h2{
     background-color: #154115;
     color: #fff;
+    font-family: "Open Sans",'Times New Roman', Times, serif;
     padding: 15px;
     line-height: 1.5rem;
     border-radius: 0 0 5px 5px;
@@ -164,39 +165,42 @@ main h2{
 .art_2{
     grid-row: 2 / 3;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: minmax(200px, 500px) minmax(100px, 200px);
     background-color: #154115;
-    height: 250px;
+    justify-content: center;
+    height: 300px;
     margin: 10px 0;
 }
 .art_2 ul{
     list-style: none;
 }
 .map{
-    grid-column: 1 / 3;
-    position: relative;
+    grid-column: 1 / 2;
+    width: 100%;
+    justify-content: center;
 }
 #iframe{
-    min-width: 70%;
-    min-height: 90%;
-    position: absolute;
-    right: 2%;
-    top: 5%;
+    width: 80%;
+    height: 80%;
+    margin: 25px auto 0 20px;
+    max-width: 450px;
+    justify-self: center;
+    align-self: center;
 }
 .weather{
     color: #fff;
-    position: relative;
     line-height: 1.5rem;
 }
 .weather ul{
     text-align: right;
-    padding: 5px;
-    position: absolute;
-    left: 5px;
+    margin: 10px 10px 0 0;
 }
 .weather a{
-    position: absolute;
-    bottom: 15px;
+    display: block;
+    width: fit-content;
+    justify-self: right;
+    margin-top: 10px;
+    margin-right: 10px;
     padding: 10px 15px;
     background-color: #8B4513;
     border-radius: 5px;
@@ -232,17 +236,17 @@ footer p, footer a{
 
 
 
-/* -------------------------------------------discover styling------------------------------------- */
+/* -------------------------------------------About styling------------------------------------- */
 
 
 #main_discover{
     margin: 0 auto;
     justify-self: center;
-    padding: 20px;
+    padding: 5px;
     width: 100%;
     display: grid;
     grid-gap: 5px;
-    grid-template-columns: 300px 1fr 1fr;
+    grid-template-columns: minmax(100px, 40%) 1fr 1fr;
     grid-template-rows: auto 1fr 1fr 1fr 1fr;
 }
 
@@ -262,8 +266,11 @@ footer p, footer a{
     grid-column: 1 / 2;
     grid-row: 2 / 3;
     border-radius: 5px;
+    align-self: center;
+    color: #fff;
     background-color: #154115;
-    width: 250px;
+    width: 90%;
+    max-width: 280px;
     height: 100%;
 }
 
@@ -283,8 +290,11 @@ footer p, footer a{
     grid-column: 1 / 2;
     grid-row: 3 / 4;
     border-radius: 5px;
+    align-self: center;
+    color: #fff;
     background-color: #154115;
-    width: 250px;
+    width: 90%;
+    max-width: 280px;
     height: 100%;
 }
 
@@ -301,11 +311,14 @@ footer p, footer a{
 
 .upcoming_evt{
     justify-self: center;
+    color: #fff;
     grid-row:  5 / 6;
     grid-column: 1 / 2;
     border-radius: 5px;
+    align-self: center;
     background-color: #154115;
-    width: 250px;    
+    width: 90%;
+    max-width: 280px;
     height: 100%;
 
 }
@@ -323,8 +336,11 @@ footer p, footer a{
 
 #calendar{
     justify-self: center;
-    width: 100%;
+    align-self: center;
+    width: 90%;
+    max-width: 280px;
     height: 100%;
+    max-height: 250px;
     grid-row: 4 / 5;
     grid-column: 1 / 2;
     border-radius: 5px;
@@ -336,6 +352,7 @@ footer p, footer a{
     display: grid;
     grid-template-rows: repeat(4, auto);
     width: 100%;
+    max-width: 550px;
     height: 100%;
     grid-column: 2 / 4;
     grid-row: 2 / 6;
@@ -345,20 +362,25 @@ footer p, footer a{
 
 .gallery_img{
     width: 90%;
-    height: 300px;
+    max-width: 400px;
+    min-width: 200px;
+    margin-bottom: 10px;
+    max-height: 300px;
+    height: 250px;
     border: solid #154115 1px;
     border-radius: 5px;
     align-self: center;
 }
 
 .gallery_img:hover{
-    transform: scale(1.12);    
+    transform: scale(1.02);    
     transition: 0.6s;
     box-shadow: 5px 10px 10px 0 rgb(70, 67, 67);
 }
 
 .gallery_img:nth-of-type(1){
     grid-row: 1 / 2;
+    margin-top: 10px;
 }
 .gallery_img:nth-of-type(2){
     grid-row: 2 / 3;
@@ -368,4 +390,47 @@ footer p, footer a{
 }
 .gallery_img:nth-of-type(4){
     grid-row: 4 / 5;
+}
+
+/* ------------------------- FAQ ---------------------------- */
+
+/* accordion */
+.accordion {
+    margin: 5px auto;
+    background-color: #154115;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-family: "Rock Salt", Roboto, sans-serif, Helvetica;
+    font-size: 1.17em;
+    color: #fff;
+    font-weight: 300;
+}
+.active, .accordion:hover {
+    background-color: #164b16;
+}
+.accordion:after {
+    content: '\02795';
+    font-size: 13px;
+    color: #414141;
+    float: right;
+    margin-left: 5px;
+}
+  
+.active:after {
+    content: "\2796";
+}
+  
+  /* Style the accordion panel. Note: hidden by default */
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: fit-content;
+    overflow: hidden;
+    transition: max-height 0.8s ease-out;
+    display: none;
 }
