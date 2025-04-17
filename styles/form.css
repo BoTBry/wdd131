@@ -26,6 +26,7 @@ body p{
 #review_main{
     height: 100%; 
     margin: auto;
+    font-family: monospace, 'Times New Roman', Times, serif ;
 }
 #review_main p{
     color: #fff;
